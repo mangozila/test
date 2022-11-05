@@ -1,0 +1,5 @@
+az login --use-device-code
+
+az group create --name canadaeast --location canadaeast
+
+az vm create --resource-group canadaeast --location canadaeast --name canadaeast-1 --image UbuntuLTS --size Standard_D8S_v3 --admin-username huy --admin-password 219@ --no-wait
